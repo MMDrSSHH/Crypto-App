@@ -6,6 +6,7 @@ import style from "../styles/coins/coins-list.module.css";
 
 // Components
 import CoinItem from "./CoinItem";
+import LoadingSpinner from "./loading-spinner/LoadingSpinner";
 
 const CoinsList = () => {
   const {
@@ -17,7 +18,7 @@ const CoinsList = () => {
 
   let content = null;
   if (isFetching) {
-    content = <span className={style["loading-message"]}>Loading ...</span>;
+    content = <LoadingSpinner external />;
   } else if (isSuccess) {
     content = (
       <ul className={style.list}>

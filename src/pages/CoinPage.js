@@ -26,6 +26,7 @@ import {
 
 // Constants
 import { dates } from "../constants/constants";
+import LoadingSpinner from "../components/loading-spinner/LoadingSpinner";
 
 const CoinPage = () => {
   const { coinId } = useParams();
@@ -61,7 +62,7 @@ const CoinPage = () => {
   if (isFetchingCoin) {
     content = (
       <>
-        <span className={style["loading-message"]}>Loading ...</span>
+        <LoadingSpinner external />
       </>
     );
   } else if (isSuccessCoin) {
