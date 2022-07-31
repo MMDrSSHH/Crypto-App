@@ -1,0 +1,121 @@
+.coin-item {
+  width: 100%;
+  height: 200px;
+  background-color: #414141;
+  padding: 25px 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  column-gap: 30px;
+  transition: transform 0.3s ease-in-out, background-color 0.2s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,
+    background-color 0.2s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.coin-item:hover {
+  transform: scale(102%);
+  -webkit-transform: scale(102%);
+  -moz-transform: scale(102%);
+  -ms-transform: scale(102%);
+  -o-transform: scale(102%);
+  background-color: #525252;
+}
+
+.image-container {
+  width: 150px;
+  height: 100%;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.coin-name {
+  opacity: 0.9;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.coin-item a {
+  color: #e3e3e3;
+}
+
+.coin-item a:hover {
+  color: #b6b6b6;
+}
+
+.price-container {
+  width: 40%;
+  color: #e3e3e3;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0.9;
+}
+
+.price-change {
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+.increased {
+  color: #9fff9f;
+}
+
+.decreased {
+  color: #f95b5b;
+}
+
+.unchanged {
+  color: #e3e3e3;
+}
+
+.high-and-low-prices {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.high-and-low-prices > span {
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+}
+
+.high-day {
+  color: #9fff9f;
+}
+
+.low-day {
+  color: #f95b5b;
+}
+
+/* .market-cap-rate.increased {
+  color: #9fff9f;
+}
+
+.market-cap-rate.decreased {
+  color: #f95b5b;
+}
+
+.market-cap-rate.unchanged {
+  color: #e3e3e3;
+} */
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
